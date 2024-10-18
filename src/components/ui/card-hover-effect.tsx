@@ -49,6 +49,13 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
+            <div className="w-full flex items-center justify-center">
+              <img
+                src="/assets/code-solid.svg"
+                style={{ width: 50, height: 50 }}
+                alt=""
+              />
+            </div>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
@@ -101,7 +108,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
