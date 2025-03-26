@@ -158,7 +158,13 @@ export default function Home() {
                 })}
               </div>
             </TabsContent>
-            <TabsContent value="blog">Blog.</TabsContent>
+            <TabsContent value="blog">
+              <div className="h-full w-full flex items-center justify-center">
+                <h3 className="text-4xl text-cyan-600 font-bold">
+                  Página em construção
+                </h3>
+              </div>
+            </TabsContent>
           </Tabs>
         </section>
       </main>
