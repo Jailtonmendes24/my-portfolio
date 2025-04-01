@@ -10,10 +10,10 @@ import {
 export default function Project({ repo }: { repo: GitRepository }) {
   const { name, description, html_url } = repo;
   return (
-    <Card className="rounded-lg">
+    <Card className="rounded-lg max-h-[250px]">
       <CardHeader>
         <CardTitle className="text-xl">{name}</CardTitle>
-        <CardDescription className="mt-4 text-lg line-clamp-2">
+        <CardDescription className="text-lg line-clamp-2">
           {description || "Sem descrição"}
         </CardDescription>
       </CardHeader>
